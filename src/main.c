@@ -28,6 +28,7 @@ main(int argc, char* argv[])
 	GPIO_InitStructure.Speed = GPIO_SPEED_FAST;
 	HAL_GPIO_Init(GPIOA, &GPIO_InitStructure);
 
+	//配置G6为输出模式
 	GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;
 	GPIO_InitStructure.Pin = GPIO_PIN_6;
 	GPIO_InitStructure.Pull = GPIO_PULLUP;
